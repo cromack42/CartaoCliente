@@ -2,7 +2,7 @@
 <flowgorithm fileversion="2.11">
     <attributes>
         <attribute name="name" value=""/>
-        <attribute name="authors" value="marce"/>
+        <attribute name="authors" value="Marcelo"/>
         <attribute name="about" value=""/>
         <attribute name="saved" value="2021-07-25 04:04:59 "/>
         <attribute name="created" value="bWFyY2U7REVTS1RPUC1VUlE3TjBQOzIwMjEtMDctMjU7IjAzOjU3OjU2ICI7MjgxMg=="/>
@@ -12,16 +12,17 @@
         <parameters/>
         <body>
             <declare name="cliente" type="String" array="False" size=""/>
-            <declare name="cartao" type="Boolean" array="False" size=""/>
-            <declare name="numero" type="String" array="False" size=""/>
+            <declare name="cartão" type="Boolean" array="False" size=""/>
+           
             <input variable="cliente"/>
-            <input variable="cartao"/>
-            <if expression="cartao">
+            <input variable="cartão"/>
+            <if expression="cartão">
                 <then>
-                    <input variable="cartao"/>
+                    <input variable="cartão"/>
+                    <>
                 </then>
                 <else>
-                    <output expression="&quot;Infelizmente compra sem cart&#227;o ser&#225; recusada&quot;" newline="True"/>
+                    <output expression="Infelizmente, toda compra sem cartão será recusada" newline="True"/>
                 </else>
             </if>
         </body>
